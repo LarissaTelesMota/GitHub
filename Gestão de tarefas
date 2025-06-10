@@ -163,3 +163,9 @@ void editarTarefa(char tarefas[][NUM_CAMPOS][TAM_CAMPO], int quantidade) {
 
     printf("Tarefa atualizada com sucesso!\n");
 }
+    
+    void excluirTarefa(char tarefas[][NUM_CAMPOS][TAM_CAMPO], int *quantidade) {
+    if (*quantidade == 0) {
+        printf("\nNenhuma tarefa para excluir!\n");
+        return;
+    }
